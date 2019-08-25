@@ -10,7 +10,7 @@ export default class Login extends Component {
 
   render() {
     return(
-      <section>
+      <section className="login">
         <form className="login-form">
             <legend>login</legend>
             <label>
