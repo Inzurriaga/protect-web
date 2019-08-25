@@ -11,7 +11,18 @@ export default class Login extends Component {
   render() {
     return(
       <section>
-        <h1>hello im the login</h1>
+        <form className="login-form">
+            <legend>login</legend>
+            <label>
+              <p>Station ID</p>
+              <input type="text" placeholder="Station ID"></input>
+            </label>
+            <label>
+              <p>Password</p>
+              <input type="password" placeholder="password"></input>
+            </label>
+            <button>Login</button>
+        </form>
       </section>
     )
   }
