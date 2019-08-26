@@ -14,6 +14,9 @@ export default class Header extends Component {
       if ( s < 10 ) {
         s = "0" + s;
       }
+      if ( m < 10 ) {
+        m = "0" + m;
+      }
       this.setState({
         time: `${h}:${m}:${s}`
       })
@@ -23,8 +26,8 @@ export default class Header extends Component {
   render() {
     return(
       <header>
-        <h1>TECH TO PROTECT</h1>
         <p>{this.state.time}</p>
+        <h1>TECH TO PROTECT</h1>
       </header>
     )
   }

@@ -1,15 +1,22 @@
 import React from "react";
+import { connect } from "react-redux";
 import Header from "../header/Header";
 import Home from "../home/Home";
 import Login from "../login/Login";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Header />
-      <Login />
+      {
+        props.login ? <Home /> : <Login />
+      }
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  login: state.login
+})
+
+export default connect(mapStateToProps)(App);

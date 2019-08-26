@@ -12,14 +12,14 @@ export default class Login extends Component {
     return(
       <section className="login">
         <form className="login-form">
-            <legend>login</legend>
+            <legend>Login</legend>
             <label>
               <p>Station ID</p>
               <input type="text" placeholder="Station ID"></input>
             </label>
             <label>
               <p>Password</p>
-              <input type="password" placeholder="password"></input>
+              <input type="password" placeholder="Password"></input>
             </label>
             <button>Login</button>
         </form>
