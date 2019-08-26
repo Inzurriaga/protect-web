@@ -1,0 +1,18 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 50 50"
+   height="188.97638"
+   width="188.97638">
+  <g
+     transform="translate(0,-247)"
+     id="layer1">
+    <path
+       id="path949"
+       d="M 1.4432849,248.46365 1.543911,295.55676 H 48.536353"
+       style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path951"
+       d="m 2.6458333,282.54241 13.0401777,-2.45684 8.126488,-10.77232 10.01637,7.46502 11.43378,-22.67856"
+       style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>

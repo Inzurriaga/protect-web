@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { ReactComponent as Graph } from "../../assets/graph.svg";
+import { ReactComponent as Personnel } from "../../assets/personnel.svg"
 
 export default class Home extends Component  {
   constructor() {
@@ -10,8 +12,15 @@ export default class Home extends Component  {
 
   render() {
     return(
-      <section>
-        <h1>hello world</h1>
+      <section className="home">
+        <button className="button">
+          <Personnel className="personnel-image button-image"/>
+          <p>personnel</p>
+        </button>
+        <button className="button">
+          <Graph className="graph-image button-image"/>
+          <p>Data</p>
+        </button>
       </section>
     )
   }

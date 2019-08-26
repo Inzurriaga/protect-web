@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { loginUser } from "../../action";
 
-export default class Login extends Component {
-  constructor() {
-    super();
-    this.state = {
-      test: "hello im the login"
-    }
+export class Login extends Component {
+
+  login = (e) => {
+    e.preventDefault();
+    this.props.loginUser(true)
   }
 
   render() {
@@ -21,9 +22,15 @@ export default class Login extends Component {
               <p>Password</p>
               <input type="password" placeholder="Password"></input>
             </label>
-            <button>Login</button>
+            <button onClick={this.login}>Login</button>
         </form>
       </section>
     )
   }
 }
+
+const mapDispatchToProps = (dispatch) => ({
+  loginUser: bool => dispatch(loginUser(bool))
+})
+
+export default connect(null, mapDispatchToProps)(Login)

@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  height: 150px;
+  width: 150px;
+  background-color: #FFFFFF;
+  font-size: 1.5em;
+  .graph-image {
+    width: 90px;
+    height: 90px;
+    stroke: #000000;
+  }
+  .personnel-image {
+    width: 90px;
+    height: 90px;
+    stroke: #000000;
+  }
+  p {
+    margin: 0;
+  }
+  &:hover {
+    background: #727272;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    .button-image {
+      stroke: #FFFFFF;
+    }
+  }
+}
