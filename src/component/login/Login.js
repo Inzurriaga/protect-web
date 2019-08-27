@@ -6,6 +6,7 @@ export class Login extends Component {
 
   login = (e) => {
     e.preventDefault();
+    this.props.history.push("/home")
     this.props.loginUser(true)
   }
 

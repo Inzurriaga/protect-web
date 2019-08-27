@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import { ReactComponent as Graph } from "../../assets/graph.svg";
 import { ReactComponent as Personnel } from "../../assets/personnel.svg"
 
@@ -13,14 +14,14 @@ export default class Home extends Component  {
   render() {
     return(
       <section className="home">
-        <button className="button">
+        <NavLink to="/personnel" className="button">
           <Personnel className="personnel-image button-image"/>
           <p>personnel</p>
-        </button>
-        <button className="button">
+        </NavLink>
+        <NavLink to="/data" className="button">
           <Graph className="graph-image button-image"/>
           <p>Data</p>
-        </button>
+        </NavLink>
       </section>
     )
   }

@@ -16,6 +16,7 @@
   width: 150px;
   background-color: #FFFFFF;
   font-size: 1.5em;
+  text-decoration: none;
   .graph-image {
     width: 90px;
     height: 90px;
@@ -28,13 +29,16 @@
   }
   p {
     margin: 0;
+    color: #000000;
   }
   &:hover {
     background: #727272;
-    color: #FFFFFF;
     border-color: #FFFFFF;
     .button-image {
       stroke: #FFFFFF;
+    }
+    p {
+      color: #FFFFFF;
     }
   }
 }
