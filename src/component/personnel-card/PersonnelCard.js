@@ -15,7 +15,7 @@ export class PersonnelCard extends Component {
   }
 }
 
-export const mapStateToProps = (state) => ({
+const mapStateToProps = (state) => ({
   personnels: state.personnels
 })
 
