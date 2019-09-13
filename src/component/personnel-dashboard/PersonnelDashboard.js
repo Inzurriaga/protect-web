@@ -8,7 +8,6 @@ export class PersonnelDashboard extends Component {
   constructor() {
     super();
     this.socket = io("http://localhost:3000");
-    this.socket.emit('what', 'Hi server im the web');
     this.socket.on("what", (data) => {
       this.props.updatePersonnels(data)
     })
